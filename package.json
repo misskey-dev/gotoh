@@ -6,7 +6,7 @@
   "types": "index.d.ts",
   "packageManager": "yarn@4.0.0",
   "scripts": {
-    "artificats": "napi artificats",
+    "artifacts": "napi artifacts",
     "bench": "vitest bench --reporter verbose",
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
