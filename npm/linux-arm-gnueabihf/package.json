@@ -1,6 +1,6 @@
 {
   "name": "@misskey/gotoh-linux-arm-gnueabihf",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "os": [
     "linux"
   ],
