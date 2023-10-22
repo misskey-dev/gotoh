@@ -1,0 +1,43 @@
+{
+  "name": "@misskey/gotoh",
+  "version": "0.1.0",
+  "license": "AGPL-3.0",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "packageManager": "yarn@4.0.0",
+  "scripts": {
+    "artificats": "napi artificats",
+    "bench": "vitest bench --reporter verbose",
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform",
+    "prepublishOnly": "napi prepublish -t npm",
+    "test": "vitest test --reporter verbose",
+    "universal": "napi universal",
+    "version": "napi version"
+  },
+  "devDependencies": {
+    "@napi-rs/cli": "^2.16.3",
+    "@types/node": "^20.8.7",
+    "@vitest/ui": "0.34.6",
+    "re2": "^1.20.4",
+    "vitest": "^0.34.6"
+  },
+  "napi": {
+    "name": "gotoh",
+    "triples": {
+      "additional": [
+        "aarch64-apple-darwin",
+        "aarch64-linux-android",
+        "aarch64-pc-windows-msvc",
+        "aarch64-unknown-linux-gnu",
+        "aarch64-unknown-linux-musl",
+        "armv7-linux-androideabi",
+        "armv7-unknown-linux-gnueabihf",
+        "i686-pc-windows-msvc",
+        "universal-apple-darwin",
+        "x86_64-unknown-freebsd",
+        "x86_64-unknown-linux-musl"
+      ]
+    }
+  }
+}
