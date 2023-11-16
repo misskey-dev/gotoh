@@ -4,7 +4,7 @@
   "license": "AGPL-3.0",
   "main": "index.js",
   "types": "index.d.ts",
-  "packageManager": "yarn@4.0.0",
+  "packageManager": "yarn@4.0.2",
   "scripts": {
     "artifacts": "napi artifacts",
     "bench": "vitest bench --reporter verbose",
